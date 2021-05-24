@@ -8,6 +8,6 @@ Deep learning for covid 19 detection.
 
 
 <p align="center">
-  <img src="Assets/plot_01_1.png" >
+  <img src="Figures/plot_01_1.png" >
 </p>
 
