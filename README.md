@@ -15,3 +15,8 @@ The CNN developed and was applied for detecting COVID cases from normal. In the 
   <img src="Figures/plot_01_1.png" >
 </p>
 
+
+
+
+oversampling
+class weigting means multplying loss function
