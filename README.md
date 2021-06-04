@@ -82,6 +82,17 @@ The data then was divided into two Train and Validation folders.
 
 
 Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
+
+* The **Dataset** two categories are seen below.
+<p align="left">
+  <img src="Assets/plot_01_assets_1.png" >
+</p>
+
+* The **Dataset_4_classe** four categories are seen below.
+<p align="left">
+  <img src="Assets/plot_01_assets_1_4classes.png" >
+</p>
+
 In this project, we use the deep neural network to differ the normal patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
 
 As it is seen in the project directory, the multi-class classification data set (Dataset_4_classe) included four different sub-folders compare to two bi-class classification data set (Data set).
