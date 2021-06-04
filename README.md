@@ -20,7 +20,7 @@ ref: https://www.google.com/search?q=Pneumocystis&oq=Pneumocystis&aqs=chrome.0.6
 * COVID-19 is caused by a coronavirus called SARS-CoV-2. Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.
 
 <p align="center">
-  <img hight=100 src="Assets/covid.png" >
+  <img  width="460" height="300" src="Assets/covid.png" >
 </p>
 
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
