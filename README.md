@@ -148,3 +148,5 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 <p align="center">
   <img src="Assets/Conv_layer_2_viz.png" >
 </p>
+
+You can see that some filters check the edge of images while as we get far from images filters see the roundness of the image.
