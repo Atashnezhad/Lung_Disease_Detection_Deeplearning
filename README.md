@@ -39,7 +39,6 @@ The project directory tree structure is provided below.
 ```
 ├───Assets
 ├───Codes
-│   ├───.ipynb_checkpoints
 │   └───CNN_2_classes.ipynb
 │   └───CNN_4_classes_Class_Weight_app.ipynb
 │   └───Models
@@ -62,7 +61,6 @@ The project directory tree structure is provided below.
 │       ├───Pneumocystis
 │       └───Streptococcus
 ├───Extract and filter images from data set
-│   ├───.ipynb_checkpoints
 │   └───Dataset
 │       ├───Covid
 │       ├───NORMAL
@@ -131,18 +129,12 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 
 **Conclusion**
 
-- The CNN developed and was applied for detecting COVID-19 cases from normal. 
-
-
-
-
-* The CNN model different metrics are seen after 10 epoches.
+* The CNN model different metrics are seen for biclass classification project below.
 <p align="center">
   <img src="Figures/plot_01_1.png" >
 </p>
 
-
-
-
-oversampling
-class weigting means multplying loss function
+* The CNN model different loss and accuracy metrics are seen for biclass classification project below.
+<p align="center">
+  <img src="Figures/plot_01_1_4classes.png" >
+</p>
