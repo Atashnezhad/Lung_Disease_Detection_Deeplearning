@@ -2,18 +2,18 @@
 # Lung disease detection using Deep learning
 
 ### Project Name:
-Deep learning for detecting three lung sicknesss using X-Ray iamges
+Deep learning for detecting three lung sicknesses using X-Ray images
 
 ### Description:
 
-This project includes two sub-projects including two class classification and multi-class classification.
+This project includes two sub-projects including two-class classification and multi-class classification.
 
-Two different data sets gathrered from Kaggle and Github for training two different Convultional Nural Networks (CNN).
-The two class classification model can different between normal cases and covid cases. In this case, I had balanced number of images.
-In the multiclass classification project, the data was imbalance. I used two common approaches for dealing with imbalance data in image processing including class weight adjustment and over-sampling.
+Two different data sets gathered from Kaggle and Github for training two different Convolutional Nural Networks (CNN).
+The two-class classification model can differentiate between normal cases and covid cases. In this case, I had balanced number of images.
+In the multiclass classification project, the data was imbalanced. I used two common approaches for dealing with imbalanced data in image processing including class weight adjustment and over-sampling.
 
 
-The three lung discesses defination are as follow.
+The three lungs discuss definition is as follows.
 
 * Pneumocystis pneumonia (PCP) is a serious infection that causes inflammation and fluid buildup in your lungs. It's brought on by a fungus called Pneumocystis jirovecii that spreads through the air. This fungus is very common. Most people's immune systems have fought it off by the time they're 3 or 4 years old.
 
@@ -30,7 +30,7 @@ The three lung discesses defination are as follow.
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
 
 
-**The above definations were gathered from wikipedia and google.**
+**The above definitions were gathered from Wikipedia and Google.**
 
 
 
@@ -78,10 +78,13 @@ The project directory tree structure is provided below.
 
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
 
-The data then was divided to two Train and Validation folders.
-In this project, we use the deep nutral network to differe the noraml patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
+The data then was divided into two Train and Validation folders.
 
-As it is seen in project directory, the multi class classification data set (Dataset_4_classe) incldued four different sub-folders compare two bi-class classification data set (Data set).
+
+Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
+In this project, we use the deep neural network to differ the normal patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
+
+As it is seen in the project directory, the multi-class classification data set (Dataset_4_classe) included four different sub-folders compare to two bi-class classification data set (Data set).
 
 
 
@@ -90,13 +93,13 @@ As it is seen in project directory, the multi class classification data set (Dat
 
 **Assembled Deep Net Model Layers:** 
 
-Any time that you have several images (multiclass classification), use two to three convolution layers. Also,a use softmax as activation for the last layer as I did above (my recommendation but you may test other types either). Note that the categorical_crossentropy isalmost default for multiclass classifiers.
+Any time that you have several images (multiclass classification) use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers.
 
 remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images.
 
 **Prepare Images:**
-Using ImageDataGenerator does the normalization (Resacle function does normalization). Then augment the data set for both train and val.
-Note that for validation section, I just apply the normalziation part. Next, use flow to apply the data augmention.
+Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
+Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
 
 * Below dataset images after applying augmentation are seen.
 
@@ -106,7 +109,7 @@ Note that for validation section, I just apply the normalziation part. Next, use
 
 
 
-For bi-class classification, the number of images are equal so there is no need for balancing dataset. However, for multi-class classification, I have imbalnace data and I need to consider it to prevent from bias. One way to deal with imbalance data apply class-weight using following stackoverflow three lines code and pass it to the fit function.
+For bi-class classification, the number of images is equal so there is no need for balancing the dataset. However, for multi-class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
 
 ```python
 counter = Counter(train_generator.classes)                          
