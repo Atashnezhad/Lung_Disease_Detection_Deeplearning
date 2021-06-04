@@ -125,3 +125,13 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 <p align="center">
   <img src="Figures/plot_01_1_4classes.png" >
 </p>
+
+
+
+
+**visualization**
+A visualization for 4 class classification network is seen below.
+<p align="center">
+  <img src="Figures/CNN_4class.png" >
+</p>
+
