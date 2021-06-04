@@ -129,9 +129,10 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 
 
 
-**visualization**
-A visualization for 4 class classification network is seen below.
+**Visualization**
+
+A visualization using visualkeras library for 4 class classification network is seen below.
 <p align="center">
-  <img src="Figures/CNN_4class.png" >
+  <img width="500" src="Figures/CNN_4class.png" >
 </p>
 
