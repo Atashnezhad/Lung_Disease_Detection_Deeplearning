@@ -5,7 +5,13 @@
 Deep learning for detecting three lung sicknesss using X-Ray iamges
 
 ### Description:
-In this project, we use the deep nutral network to differe the noraml patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
+
+This project includes two sub-projects including two class classification and multi-class classification.
+
+Two different data sets gathrered from Kaggle and Github for training two different Convultional Nural Networks (CNN).
+The two class classification model can different between normal cases and covid cases. In this case, I had balanced number of images.
+In the multiclass classification project, the data was imbalance. I used two common approaches for dealing with imbalance data in image processing including class weight adjustment and over-sampling.
+
 
 The three lung discesses defination are as follow.
 
@@ -33,27 +39,47 @@ ref: https://www.google.com/search?q=Pneumocystis&oq=Pneumocystis&aqs=chrome.0.6
 ### Table of Contents:
 The project directory tree structure is provided below.
 ```
-├── Assets
-├── Codes
-│   ├── CNN_2_classes.ipynb
-│   ├── CNN_4_classes_Class_Weight_app.ipynb
-│   └── Models
-│       ├── model_covid_test.h5
-│       └── model_covid_test_4classes_82percent.h5
-├── Dataset
-├── Dataset_4_classe
-├── Figures
-│   ├── plot_01_1.png
-│   └── plot_01_1_4classes.png
-├── LICENSE
-└── README.md
+├───Assets
+├───Codes
+│   ├───.ipynb_checkpoints
+│   └───Models
+├───Dataset
+│   ├───Train
+│   │   ├───Covid
+│   │   └───NORMAL
+│   └───Val
+│       ├───Covid
+│       └───NORMAL
+├───Dataset_4_classe
+│   ├───Train
+│   │   ├───Covid
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   └───Val
+│       ├───Covid
+│       ├───NORMAL
+│       ├───Pneumocystis
+│       └───Streptococcus
+├───Extract and filter images from data set
+│   ├───.ipynb_checkpoints
+│   └───Dataset
+│       ├───Covid
+│       ├───NORMAL
+│       ├───Pneumocystis
+│       └───Streptococcus
+└───Figures
 ```
 
 
+### Instruction:
 
+**Gathering data:** 
 
+The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
 
-
+The data then was divided to two Train and Validation folders.
+In this project, we use the deep nutral network to differe the noraml patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
 
 
 
