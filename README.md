@@ -1,5 +1,5 @@
 
-# Deep learning for detecting three lung sicknesss using X-Ray iamges
+# Lung disease detection using Deep learning
 
 ### Project Name:
 Deep learning for detecting three lung sicknesss using X-Ray iamges
@@ -21,8 +21,6 @@ The three lung discesses defination are as follow.
   <img src="Assets/Pneu.PNG" >
 </p>
 
-ref: https://www.google.com/search?q=Pneumocystis&oq=Pneumocystis&aqs=chrome.0.69i59j46i433j0i433l4j0l4.1176j0j7&sourceid=chrome&ie=UTF-8
-
 * COVID-19 is caused by a coronavirus called SARS-CoV-2. Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.
 
 <p align="center">
@@ -42,6 +40,8 @@ The project directory tree structure is provided below.
 ├───Assets
 ├───Codes
 │   ├───.ipynb_checkpoints
+│   └───CNN_2_classes.ipynb
+│   └───CNN_4_classes_Class_Weight_app.ipynb
 │   └───Models
 ├───Dataset
 │   ├───Train
@@ -80,6 +80,21 @@ The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothym
 
 The data then was divided to two Train and Validation folders.
 In this project, we use the deep nutral network to differe the noraml patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
+
+As it is seen in project directory, the multi class classification data set (Dataset_4_classe) incldued four different sub-folders compare two bi-class classification data set (Data set).
+
+**Preparing data:** 
+Images were imported to
+
+
+
+
+
+
+
+
+
+
 
 
 
