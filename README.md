@@ -45,6 +45,7 @@ The project directory tree structure is provided below.
 ├───Codes
 │   └───CNN_2_classes.ipynb
 │   └───CNN_4_classes_Class_Weight_app.ipynb
+│   └───CNN_visu.ipynb
 │   └───Models
 ├───Dataset
 │   ├───Train
