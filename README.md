@@ -1,5 +1,11 @@
+<p align="center">
+  <img width="1700" src="Assets/Head.png" >
+</p>
 
 # Lung disease detection using Deep learning
+
+
+
 
 ### Project Name:
 Deep learning for detecting three lung sicknesses using X-Ray images
