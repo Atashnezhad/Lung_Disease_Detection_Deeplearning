@@ -127,7 +127,7 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 ```
 
 
-**Conclusion**
+**CNN model Metrics and Conclusion**
 
 * The CNN model different metrics are seen for biclass classification project below.
 <p align="center">
