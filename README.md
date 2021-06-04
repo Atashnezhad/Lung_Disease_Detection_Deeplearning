@@ -17,13 +17,13 @@ The three lung discesses defination are as follow.
 
 * Pneumocystis pneumonia (PCP) is a serious infection that causes inflammation and fluid buildup in your lungs. It's brought on by a fungus called Pneumocystis jirovecii that spreads through the air. This fungus is very common. Most people's immune systems have fought it off by the time they're 3 or 4 years old.
 
-<p align="center">
+<p align="left">
   <img src="Assets/Pneu.PNG" >
 </p>
 
 * COVID-19 is caused by a coronavirus called SARS-CoV-2. Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.
 
-<p align="center">
+<p align="left">
   <img  width="460" height="300" src="Assets/covid.png" >
 </p>
 
@@ -83,34 +83,43 @@ In this project, we use the deep nutral network to differe the noraml patients f
 
 As it is seen in project directory, the multi class classification data set (Dataset_4_classe) incldued four different sub-folders compare two bi-class classification data set (Data set).
 
-**Preparing data:** 
-Images were imported to
 
 
 
 
 
+**Assembled Deep Net Model Layers:** 
 
+Any time that you have several images (multiclass classification), use two to three convolution layers. Also,a use softmax as activation for the last layer as I did above (my recommendation but you may test other types either). Note that the categorical_crossentropy isalmost default for multiclass classifiers.
 
+remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images.
 
-
-
-
-
-
-
-
-
-# CNN model to detect COVID from patients X-Ray images
-
-Deep learning for covid 19 detections. Two sets of data including X-Ray images of Normal and covid patients were gathered.
-The CNN developed and was applied for detecting COVID cases from normal. In the second part of this project, I will use the CNN m for detecting 20 different categories.
+**Prepare Images:**
+Using ImageDataGenerator does the normalization (Resacle function does normalization). Then augment the data set for both train and val.
+Note that for validation section, I just apply the normalziation part. Next, use flow to apply the data augmention.
 
 * Below dataset images after applying augmentation are seen.
 
-<p align="center">
-  <img src="Assets/plot_01_assets_2.png" >
+<p align="left">
+  <img  width="550" src="Assets/plot_01_assets_2.png" >
 </p>
+
+
+
+For bi-class classification, the number of images are equal so there is no need for balancing dataset. However, for multi-class classification, I have imbalnace data and I need to consider it to prevent from bias. One way to deal with imbalance data apply class-weight using following stackoverflow three lines code and pass it to the fit function.
+
+```python
+counter = Counter(train_generator.classes)                          
+max_val = float(max(counter.values()))       
+class_weights = {class_id : max_val/num_images for class_id, num_images in counter.items()}
+```
+
+
+**Conclusion**
+
+- The CNN developed and was applied for detecting COVID-19 cases from normal. 
+
+
 
 
 * The CNN model different metrics are seen after 10 epoches.
