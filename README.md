@@ -1,7 +1,13 @@
 
-# Deep learning for detecting three lung sicknesss from X-Ray iamges
+# Deep learning for detecting three lung sicknesss using X-Ray iamges
 
+### Project Name:
+Deep learning for detecting three lung sicknesss using X-Ray iamges
 
+### Description:
+In this project, we use the deep nutral network to differe the noraml patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
+
+The three lung discesses defination are as follow.
 
 * Pneumocystis pneumonia (PCP) is a serious infection that causes inflammation and fluid buildup in your lungs. It's brought on by a fungus called Pneumocystis jirovecii that spreads through the air. This fungus is very common. Most people's immune systems have fought it off by the time they're 3 or 4 years old.
 
@@ -20,7 +26,7 @@ ref: https://www.google.com/search?q=Pneumocystis&oq=Pneumocystis&aqs=chrome.0.6
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
 
 
-
+**The above definations were gathered from wikipedia and google.**
 
 
 # CNN model to detect COVID from patients X-Ray images
