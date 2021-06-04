@@ -132,8 +132,19 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 
 **Visualization**
 
-A visualization using visualkeras library for 4 class classification network is seen below.
+- A visualization using visualkeras library for 4 class classification network is seen below.
 <p align="center">
   <img width="500" src="Figures/CNN_4class.png" >
 </p>
 
+- The second Convolutional Nural Networks layers were Visualized below.
+
+<p align="center">
+  <img src="Assets/Conv_layer_1_viz.png" >
+</p>
+
+- The third Convolutional Nural Networks layers were Visualized below.
+
+<p align="center">
+  <img src="Assets/Conv_layer_2_viz.png" >
+</p>
