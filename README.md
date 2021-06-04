@@ -122,8 +122,8 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 </p>
 
 * The CNN model different loss and accuracy metrics are seen for biclass classification project below.
-<p align="center">
-  <img src="Figures/plot_01_1_4classes.png" >
+<p align="left">
+  <img src="Figures/FixedclassRes.png" >
 </p>
 
 
