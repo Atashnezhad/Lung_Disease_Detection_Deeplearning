@@ -29,6 +29,37 @@ ref: https://www.google.com/search?q=Pneumocystis&oq=Pneumocystis&aqs=chrome.0.6
 **The above definations were gathered from wikipedia and google.**
 
 
+
+### Table of Contents:
+The project directory tree structure is provided below.
+```
+├── Assets
+├── Codes
+│   ├── CNN_2_classes.ipynb
+│   ├── CNN_4_classes_Class_Weight_app.ipynb
+│   └── Models
+│       ├── model_covid_test.h5
+│       └── model_covid_test_4classes_82percent.h5
+├── Dataset
+├── Dataset_4_classe
+├── Figures
+│   ├── plot_01_1.png
+│   └── plot_01_1_4classes.png
+├── LICENSE
+└── README.md
+```
+
+
+
+
+
+
+
+
+
+
+
+
 # CNN model to detect COVID from patients X-Ray images
 
 Deep learning for covid 19 detections. Two sets of data including X-Ray images of Normal and covid patients were gathered.
