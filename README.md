@@ -107,7 +107,7 @@ Using ImageDataGenerator does the normalization (Resale function does normalizat
 Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
 * Below dataset images after applying augmentation are seen.
 <p align="left">
-  <img  width="1200" src="Assets/plot_01_assets_2_4classes.png" >
+  <img  width="1500" src="Assets/plot_01_assets_2_4classes.png" >
 </p>
 For bi-class classification, the number of images is equal so there is no need for balancing the dataset. However, for multi-class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
 
