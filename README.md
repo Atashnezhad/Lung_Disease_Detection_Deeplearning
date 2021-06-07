@@ -105,10 +105,14 @@ Any time that you have several images (multiclass classification) use two to thr
 **Prepare Images:**
 Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
 Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
-* Below dataset images after applying augmentation are seen.
+* Below dataset images after applying augmentation adn balancing are seen.
+
 <p align="left">
-  <img  width="1500" src="Assets/plot_01_assets_2_4classes.png" >
+  <img  width="1500" src="Assets/plot_01_assets_2_4classes_balanced.png" >
 </p>
+
+
+
 For bi-class classification, the number of images is equal so there is no need for balancing the dataset. However, for multi-class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
 
 ```python
