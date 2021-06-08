@@ -43,10 +43,18 @@ The project directory tree structure is provided below.
 ```
 ├───Assets
 ├───Codes
-│   └───CNN_2_classes.ipynb
-│   └───CNN_4_classes_Class_Weight_app.ipynb
-│   └───CNN_visu.ipynb
+│   ├───.ipynb_checkpoints
 │   └───Models
+│       ├───Test_Data_Set
+│       │   ├───COVID
+│       │   ├───NORMAL
+│       │   ├───Pneumocystis
+│       │   └───Streptococcus
+│       └───Test_Data_Set_Sec_app
+│           ├───Covid
+│           ├───NORMAL
+│           ├───Pneumocystis
+│           └───Streptococcus
 ├───Dataset
 │   ├───Train
 │   │   ├───Covid
@@ -65,7 +73,35 @@ The project directory tree structure is provided below.
 │       ├───NORMAL
 │       ├───Pneumocystis
 │       └───Streptococcus
+├───Dataset_4_classes_balanced
+│   ├───Train
+│   │   ├───Covid
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   └───Val
+│       ├───Covid
+│       ├───NORMAL
+│       ├───Pneumocystis
+│       └───Streptococcus
+├───Dataset_4_classe_second_approach
+│   ├───Test
+│   │   ├───Covid
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   ├───Train
+│   │   ├───Covid
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   └───Val
+│       ├───Covid
+│       ├───NORMAL
+│       ├───Pneumocystis
+│       └───Streptococcus
 ├───Extract and filter images from data set
+│   ├───.ipynb_checkpoints
 │   └───Dataset
 │       ├───Covid
 │       ├───NORMAL
