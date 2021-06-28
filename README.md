@@ -202,8 +202,8 @@ You can see that some filters check the edge of images while as we get far from 
 * In four class classification, the total number of noraml and covid were equal while the number of two other categories were under-balance. The number of other two classes were balanced taking the number of normal and covid casses into account. The generator was applied for generating new images. Check out the Over_Sampling_Images_second_approach file.
 * The four class classification codes was uploaded into the google colab to be ran using GPU. The learning curve of model is seen below.
 
-<p align="center">
-  <img src="Assets/LearningCurvefourClassClassification.png" >
+<p align="left">
+  <img width="500" src="Assets/LearningCurvefourClassClassification.png" >
 </p>
 
 * 
