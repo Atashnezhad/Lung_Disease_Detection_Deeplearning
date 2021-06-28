@@ -200,13 +200,25 @@ You can see that some filters check the edge of images while as we get far from 
 * Both models including two class classification and four class classification were developed in python using tensorflow library.
 * For the two class classification the balance data set was used.
 * In four class classification, the total number of noraml and covid were equal while the number of two other categories were under-balance. The number of other two classes were balanced taking the number of normal and covid casses into account. The generator was applied for generating new images. Check out the Over_Sampling_Images_second_approach file.
+* In four class classification project weighted objective function was used to deal with imbalance data set.
 * The four class classification codes was uploaded into the google colab to be ran using GPU. The learning curve of model is seen below.
+
+
 
 <p align="left">
   <img width="500" src="Assets/LearningCurvefourClassClassification.png" >
 </p>
 
-* 
+* The two-class classification model accuracy achieved 96%.
+* The four-class classification model accuracy achieved around 75%.
+
+
+**Suggestion**
+
+* The balancing data using a generator is one option for dealing with imbalanced data but it is not always the best.
+* The weighted objective function can be used as a second option.
+* Generally, using either above options results in losing lots of feathered which results in low model accuracy.
+* The results for the two-class classification project were promising and reliable.
 
 
 
