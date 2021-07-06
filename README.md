@@ -90,7 +90,7 @@ Note that for the validation section, I just apply the normalization part. Next,
 * Below dataset images after applying augmentation adn balancing are seen.
 
 <p align="left">
-  <img  width="2000" src="Assets/plot_01_assets_2_4classes_balanced.png" >
+  <img  width="2500" src="Assets/plot_01_assets_2_4classes_balanced.png" >
 </p>
 
 
