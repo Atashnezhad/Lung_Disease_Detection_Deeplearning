@@ -131,12 +131,6 @@ The call back function automatically save the best models taking the best val_ac
   <img src="Assets/Conv_layer_1_viz.png" >
 </p>
 
-- The third Convolutional Nural Networks layers were Visualized below.
-
-<p align="center">
-  <img src="Assets/Conv_layer_2_viz.png" >
-</p>
-
 You can see that some filters check the edge of images while as we get far from images filters see the roundness of the image.
 
 
