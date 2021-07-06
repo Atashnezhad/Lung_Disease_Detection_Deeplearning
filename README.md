@@ -107,12 +107,12 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
 * The CNN model different metrics are seen for biclass classification project below.
 <p align="left">
-  <img width="1200" src="Figures/plot_01_1.png" >
+  <img width="700" src="Figures/plot_01_1.png" >
 </p>
 
 * The CNN model different loss and accuracy metrics are seen for biclass classification project below.
 <p align="left">
-  <img width="1200" src="Figures/FixedclassRes.png" >
+  <img width="500" src="Figures/FixedclassRes.png" >
 </p>
 
 
