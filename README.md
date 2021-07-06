@@ -8,7 +8,7 @@
 
 
 ### Project Name:
-Deep learning for detecting three lung sicknesses using X-Ray images
+Deep learning for detecting three lung sicknesses using X-Ray images.
 
 ### Description:
 
