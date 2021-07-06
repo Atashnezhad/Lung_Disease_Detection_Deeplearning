@@ -145,8 +145,8 @@ You can see that some filters check the edge of images while as we get far from 
 
 
 
-<p align="left">
-  <img width="500" src="Assets/LearningCurvefourClassClassification.png" >
+<p align="center">
+  <img width="700" src="Assets/LearningCurvefourClassClassification.png" >
 </p>
 
 * The two-class classification model accuracy achieved 96%.
