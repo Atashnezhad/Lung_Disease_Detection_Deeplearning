@@ -159,6 +159,7 @@ You can see that some filters check the edge of images while as we get far from 
 * The weighted objective function can be used as a second option.
 * Generally, using either above options results in losing lots of feathered which results in low model accuracy.
 * The results for the two-class classification project were promising and reliable.
+* Different learning rate should be applied to see it will affect the output.
 
 
 
