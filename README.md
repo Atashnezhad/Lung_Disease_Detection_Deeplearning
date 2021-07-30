@@ -36,7 +36,7 @@ The three lungs discuss definition is as follows.
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
 
 
-**The above definitions were gathered from Wikipedia and Google.**
+**Above definitions were gathered from Wikipedia and Google.**
 
 ### Table of Contents:
 The project directory tree structure is provided below.
