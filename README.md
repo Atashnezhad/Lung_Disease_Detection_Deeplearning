@@ -1,5 +1,12 @@
+<!--
 <p align="center">
   <img width="1700" src="Assets/Head.png" >
+</p>
+-->
+
+<p align="center">
+  <img width="1000" src="Assets/head_2.png" >
+  
 </p>
 
 # Artificial intelligence for lung disease detection using chest CT scan images
