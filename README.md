@@ -2,7 +2,10 @@
   <img width="1700" src="Assets/Head.png" >
 </p>
 
-# Lung disease detection using Deep learning
+# Artificial intelligence for Lung Disease detection using chest CT scan images
+
+Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we use apply two convolutional neural networks for classification. First, a two-class classification model was trained to detect and differentiate the healthy cases from covid cases. Second a second neural;l network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. In the four-class classification dataset, data augmentation was applied due to the lack of data for two classes including streptococcus and pneumocystis. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from GPU. 
+
 
 
 
@@ -16,7 +19,7 @@ This project includes two sub-projects including two-class classification and mu
 
 Two different data sets gathered from Kaggle and Github for training two different Convolutional Nural Networks (CNN).
 The two-class classification model can differentiate between normal cases and covid cases. In this case, I had balanced number of images.
-In the multiclass classification project, the data was imbalanced. I used two common approaches for dealing with imbalanced data in image processing including class weight adjustment and over-sampling.
+In the multiclass classification project, the data was imbalanced and I used two common approaches for dealing with imbalanced data in image processing including class weight adjustment and over-sampling.
 
 
 The three lungs discuss definition is as follows.
