@@ -2,7 +2,7 @@
   <img width="1700" src="Assets/Head.png" >
 </p>
 
-# Artificial intelligence for Lung Disease detection using chest CT scan images
+# Artificial intelligence for lung disease detection using chest CT scan images
 
 Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we use apply two convolutional neural networks for classification. 
 Two different data sets were gathered from Kaggle and Github for training two separate Convolutional Nural Networks (CNN).
