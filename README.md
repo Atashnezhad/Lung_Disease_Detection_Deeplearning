@@ -4,44 +4,32 @@
 
 # Artificial intelligence for Lung Disease detection using chest CT scan images
 
-Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we use apply two convolutional neural networks for classification. First, a two-class classification model was trained to detect and differentiate the healthy cases from covid cases. Second a second neural;l network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. In the four-class classification dataset, data augmentation was applied due to the lack of data for two classes including streptococcus and pneumocystis. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from GPU. 
+Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we use apply two convolutional neural networks for classification. 
+Two different data sets were gathered from Kaggle and Github for training two separate Convolutional Nural Networks (CNN).
+First, a two-class classification model was trained on balanced data (covid vs normal) to detect and differentiate the healthy cases from covid cases.
+Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. I used two common approaches in image processing for dealing with imbalanced data including class weight adjustment and over-sampling. The oversampling was done using data augmentation which uses different transformers for this purpose. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from GPU and high speed. 
 
 
-
-
-
-### Project Name:
-Deep learning for detecting three lung sicknesses using X-Ray images.
-
-### Description:
-
-This project includes two sub-projects including two-class classification and multi-class classification.
-
-Two different data sets gathered from Kaggle and Github for training two different Convolutional Nural Networks (CNN).
-The two-class classification model can differentiate between normal cases and covid cases. In this case, I had balanced number of images.
-In the multiclass classification project, the data was imbalanced and I used two common approaches for dealing with imbalanced data in image processing including class weight adjustment and over-sampling.
-
-
+### Description
 The three lungs discuss definition is as follows.
 
 * Pneumocystis pneumonia (PCP) is a serious infection that causes inflammation and fluid buildup in your lungs. It's brought on by a fungus called Pneumocystis jirovecii that spreads through the air. This fungus is very common. Most people's immune systems have fought it off by the time they're 3 or 4 years old.
 
-<p align="left">
+<p align="center">
   <img src="Assets/Pneu.PNG" >
 </p>
 
 * COVID-19 is caused by a coronavirus called SARS-CoV-2. Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.
 
-<p align="left">
+<p align="center">
   <img  width="300" src="Assets/covid.png" >
 </p>
 
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
 
+**reference: Wikipedia, Google**
 
-**Above definitions were gathered from Wikipedia and Google.**
-
-### Table of Contents:
+### Table of Contents
 The project directory tree structure is provided below.
 ```
 ├───Assets
@@ -60,7 +48,7 @@ The project directory tree structure is provided below.
 ```
 
 
-### Instruction:
+### Instruction
 
 **Gathering data:** 
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
