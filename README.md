@@ -85,7 +85,7 @@ Any time that you have several images (multiclass classification) use two to thr
 **Prepare Images:**
 Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
 Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
-* Below dataset images after applying augmentation adn balancing are seen.
+* Below dataset images after applying augmentation and balancing are seen.
 
 <p align="left">
   <img  width="2000" src="Assets/plot_01_assets_2_4classes_balanced.png" >
