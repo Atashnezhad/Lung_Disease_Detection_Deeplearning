@@ -140,7 +140,7 @@ You can see that some filters check the edge of images while as we get far from 
 * In four class classification, the total number of noraml and covid were equal while the number of two other categories were under-balance. The number of other two classes were balanced taking the number of normal and covid casses into account. The generator was applied for generating new images. Check out the Over_Sampling_Images_second_approach file.
 * In four class classification project weighted objective function was used to deal with imbalance data set.
 * The four class classification codes was uploaded into the google colab to be ran using GPU. The learning curve of model is seen below.
-* Overfitting is observed due to lack of data for two classes in four class classification project.
+* Overfitting is observed due to lack of data for two classes in four class classification project. 
 
 
 
@@ -159,6 +159,7 @@ You can see that some filters check the edge of images while as we get far from 
 * Generally, using either above options results in losing lots of feathered which results in low model accuracy.
 * The results for the two-class classification project were promising and reliable.
 * Different learning rate should be applied to see it will affect the output.
+* Cross-validation can help overcome overfitting.
 
 
 
