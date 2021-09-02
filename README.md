@@ -83,7 +83,7 @@ As it is seen in the project directory, the multi-class classification data set 
 Any time that you have several images (multiclass classification) use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images.
 
 **Prepare Images:**
-Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
+Using ImageDataGenerator does the normalization (Rescale function does normalization). Then augment the data set for both train and val.
 Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
 * Below dataset images after applying augmentation and balancing are seen.
 
