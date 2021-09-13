@@ -22,6 +22,54 @@ The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothym
 **Assembled Deep Net Model Layers:** 
 Any time in multiclass classification use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images. In four class classification project, I found that the relu activation function results in higher accuracy. I used Adam optimizer with a learning rate of 0.001.
 
+
+The CNN Model architecture used for four-class classification is seen below.
+```
+
+Model: "sequential_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_11 (Conv2D)           (None, 222, 222, 32)      896       
+_________________________________________________________________
+batch_normalization_11 (Batc (None, 222, 222, 32)      128       
+_________________________________________________________________
+conv2d_12 (Conv2D)           (None, 220, 220, 64)      18496     
+_________________________________________________________________
+batch_normalization_12 (Batc (None, 220, 220, 64)      256       
+_________________________________________________________________
+max_pooling2d_8 (MaxPooling2 (None, 110, 110, 64)      0         
+_________________________________________________________________
+dropout_11 (Dropout)         (None, 110, 110, 64)      0         
+_________________________________________________________________
+conv2d_13 (Conv2D)           (None, 108, 108, 64)      36928     
+_________________________________________________________________
+batch_normalization_13 (Batc (None, 108, 108, 64)      256       
+_________________________________________________________________
+max_pooling2d_9 (MaxPooling2 (None, 54, 54, 64)        0         
+_________________________________________________________________
+dropout_12 (Dropout)         (None, 54, 54, 64)        0         
+_________________________________________________________________
+flatten_3 (Flatten)          (None, 186624)            0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 64)                11944000  
+_________________________________________________________________
+dropout_13 (Dropout)         (None, 64)                0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 4)                 260       
+=================================================================
+Total params: 12,001,220
+Trainable params: 12,000,900
+Non-trainable params: 320
+```
+
+
+
+
+
+
+
+
 **Prepare Images:**
 Using ImageDataGenerator does the normalization. 
 Note that for the validation and test section, I just applied the normalization. 
