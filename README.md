@@ -166,6 +166,7 @@ The call back function automatically save the best models taking the best val_ac
 
 
 <!--
+
 - The second Convolutional Nural Networks layers were Visualized below.
 
 <p align="center">
@@ -176,7 +177,7 @@ You can see that some filters check the edge of images while as we get far from 
 -->
 
 
-**Final**
+**Discussion**
 
 * Both models including two class classification and four class classification were developed in python using tensorflow library.
 * For the two class classification the balance data set was used.
@@ -185,13 +186,22 @@ You can see that some filters check the edge of images while as we get far from 
 * The four class classification codes was uploaded into the google colab to be ran using GPU. The learning curve of model is seen below.
 
 
-
+<!--
 <p align="center">
   <img width="600" src="Assets/LearningCurvefourClassClassification.png" >
 </p>
 
-* The two-class classification model accuracy achieved 96%.
-* The four-class classification model accuracy achieved around 75%.
+
+-->
+
+
+
+
+
+
+
+* The two-class classification model accuracy achieved 80%.
+* The four-class classification model accuracy achieved around 80%.
 
 
 **Suggestion**
