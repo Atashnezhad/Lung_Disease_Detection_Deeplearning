@@ -28,13 +28,7 @@ Any time in multiclass classification use two to three convolution layers. Also,
 Using ImageDataGenerator does the normalization. 
 Note that for the validation and test section, I just applied the normalization. 
 
-For two class classification, the number of images is equal so there is no need for balancing the dataset. However, for four class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
-
-```python
-counter = Counter(train_generator.classes)                          
-max_val = float(max(counter.values()))       
-class_weights = {class_id : max_val/num_images for class_id, num_images in counter.items()}
-```
+For two class classification, the number of images is equal so there is no need for balancing the dataset. However, for four class classification, I have imbalanced data and I need to consider it to prevent bias. 
 
 In four class classification, I augmented and oversampled for all four classes. The Normal and Covid cases were augmented and over-sampled from 190 to 1000 images. The  Pneumocystis and Streptococcus were augmented and over-sampled from 21 and 12 to 1000 images.
 
@@ -228,3 +222,25 @@ The project directory tree structure is provided below.
 
 The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
 -->
+
+
+
+
+
+
+
+
+
+<!--
+One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
+
+```python
+counter = Counter(train_generator.classes)                          
+max_val = float(max(counter.values()))       
+class_weights = {class_id : max_val/num_images for class_id, num_images in counter.items()}
+```
+-->
+
+
+
+
