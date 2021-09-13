@@ -217,15 +217,24 @@ You can see that some filters check the edge of images while as we get far from 
 ### Table of Contents
 The project directory tree structure is provided below.
 ```
+├───All_data
+├───All_data_4_classes
 ├───Assets
 ├───Codes
-├───Dataset
-├───Dataset_4_classe
-├───Dataset_4_classes_balanced
-├───Dataset_4_classe_second_approach
-├───Extract and filter images from data set
-│   └───Dataset
-│       ├───Covid
+├───Dataset_augmented_4_classes
+├───Data_augmented_4_classes_train_test_val
+│   ├───Test
+│   │   ├───COVID
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   ├───Train
+│   │   ├───COVID
+│   │   ├───NORMAL
+│   │   ├───Pneumocystis
+│   │   └───Streptococcus
+│   └───val
+│       ├───COVID
 │       ├───NORMAL
 │       ├───Pneumocystis
 │       └───Streptococcus
