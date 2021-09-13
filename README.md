@@ -45,7 +45,7 @@ The call back function automatically save the best models taking the best val_ac
 
 # Discussion
 
-* Both models including two class classification and four class classification were developed in python using tensorflow library.
+* Both models including two class classification and four class classification were developed in python using keras library.
 * For the two class classification the balance data set was used.
 * In four class classification, the total number of noraml and covid were equal while the number of two other categories were under-balance. The number of other two classes were balanced taking the number of normal and covid casses into account. The generator was applied for generating new images. Check out the Over_Sampling_Images_second_approach file.
 * In four class classification project weighted objective function was used to deal with imbalance data set.
