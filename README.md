@@ -40,7 +40,7 @@ The three lungs discuss definition is as follows.
 
 
 
-
+<!--
 
 ### Table of Contents
 The project directory tree structure is provided below.
@@ -59,6 +59,12 @@ The project directory tree structure is provided below.
 │       └───Streptococcus
 └───Figures
 ```
+
+-->
+
+
+
+
 
 
 ### Instruction
@@ -97,11 +103,21 @@ Any time that you have several images (multiclass classification) use two to thr
 **Prepare Images:**
 Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
 Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
+
+
+
+
+<!--
 * Below dataset images after applying augmentation adn balancing are seen.
 
 <p align="left">
   <img  width="2000" src="Assets/plot_01_assets_2_4classes_balanced.png" >
 </p>
+
+-->
+
+
+
 
 
 
