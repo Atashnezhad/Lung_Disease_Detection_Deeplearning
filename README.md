@@ -72,37 +72,23 @@ Non-trainable params: 320
 
 **Prepare Images:**
 Using ImageDataGenerator does the normalization. 
-Note that for the validation and test section, I just applied the normalization. 
-
-For two class classification, the number of images is equal so there is no need for balancing the dataset. However, for four class classification, I have imbalanced data and I need to consider it to prevent bias. 
-
+Note that in the validation and test section, I just applied the normalization. 
+In two class classification, the number of images is equal so there is no need for balancing the dataset. However, for four class classification, I have imbalanced data and I need to consider it to prevent bias. 
 In four class classification, I augmented and oversampled for all four classes. The Normal and Covid cases were augmented and over-sampled from 190 to 1000 images. The  Pneumocystis and Streptococcus were augmented and over-sampled from 21 and 12 to 1000 images.
-
-
-
-# Discussion
-
-* Both models including two class classification and four class classification were developed in python using keras library.
-* For the two class classification the balance data set was used.
-* In four class classification, the total number of noraml and covid were equal while the number of two other categories were under-balance. The number of other two classes were balanced taking the number of normal and covid casses into account. The generator was applied for generating new images. Check out the Over_Sampling_Images_second_approach file.
-* In four class classification project weighted objective function was used to deal with imbalance data set.
-* The four class classification codes was uploaded into the google colab to be ran using GPU. The learning curve of model is seen below.
-
-
-* The two-class classification model accuracy achieved 80%.
-* The four-class classification model accuracy achieved around 80%.
 
 
 # Suggestion
 
 * Balancing data using a generator is one option for dealing with imbalanced data but it is not always the best.
 * The weighted objective function can be used as a second option.
-* Generally, using either above options results in losing lots of feathered which results in low model accuracy.
-* The results for the two-class classification project were promising and reliable.
+* Generally, using either above options results in losing lots of features which results in low model accuracy.
+* The results for the two-class and four class classification projects were promising.
 * Different learning rate should be applied to see it will affect the output.
 
 
 # Results
+
+Both classification models' accuracy reached 80%.
 Deep Convolutional Network Network (CNN) Classification results for four classes is seen below.
 
 <p align="center">
