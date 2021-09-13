@@ -22,23 +22,22 @@ The data ([All_data](https://github.com/Atashnezhad/Lung_Disease_Detection_Deepl
 In four class classificaton project, the data ([All_data_4_classes](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/All_data_4_classes)) was augmented and oversampled ([Dataset_augmented_4_classes](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Dataset_augmented_4_classes)) and then was devided into four subfolders including Normal, Covid, Pneumocystis, Streptococcus ([Data_augmented_4_classes_train_test_val](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Data_augmented_4_classes_train_test_val)).
 
 **Assembled Deep Net Model Layers:** 
-Any time that you have several images (multiclass classification) use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images.
+Any time in multiclass classification use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images. In four class classification project, I found that the relu activation function results in higher accuracy. I used Adam optimizer with a learning rate of 0.001.
 
 **Prepare Images:**
-Using ImageDataGenerator does the normalization (Resale function does normalization). Then augment the data set for both train and val.
-Note that for the validation section, I just apply the normalization part. Next, use flow to apply the data augmentation.
+Using ImageDataGenerator does the normalization. 
+Note that for the validation and test section, I just applied the normalization. 
 
-
-For bi-class classification, the number of images is equal so there is no need for balancing the dataset. However, for multi-class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
+For two class classification, the number of images is equal so there is no need for balancing the dataset. However, for four class classification, I have imbalanced data and I need to consider it to prevent bias. One way to deal with imbalanced data applies class-weight using following StackOverflow three lines code and pass it to the fit function.
 
 ```python
 counter = Counter(train_generator.classes)                          
 max_val = float(max(counter.values()))       
 class_weights = {class_id : max_val/num_images for class_id, num_images in counter.items()}
 ```
-**CNN model Metrics and Conclusion**
 
-The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
+In four class classification, I augmented and oversampled for all four classes. The Normal and Covid cases were augmented and over-sampled from 190 to 1000 images. The  Pneumocystis and Streptococcus were augmented and over-sampled from 21 and 12 to 1000 images.
+
 
 
 # Discussion
@@ -225,4 +224,8 @@ The project directory tree structure is provided below.
 
 
 
+<!--
+**CNN model Metrics and Conclusion**
 
+The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
+-->
