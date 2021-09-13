@@ -80,7 +80,7 @@ In four class classification, I augmented and oversampled for all four classes. 
 # Suggestion
 
 * Balancing data using a generator is one option for dealing with imbalanced data but it is not always the best.
-* The weighted objective function can be used as a second option.
+* The weighted objective function can be used as a second option to deal with unbalanced datasets.
 * Generally, using either above options results in losing lots of features which results in low model accuracy.
 * The results for the two-class and four-class classification projects were promising.
 * Different learning rates should be applied to see it will affect the output.
