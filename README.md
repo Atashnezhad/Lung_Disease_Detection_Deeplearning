@@ -62,7 +62,8 @@ In four class classification, I augmented and oversampled for all four classes. 
 * Different learning rate should be applied to see it will affect the output.
 
 
-# Final CNN 4 Class Classification Results
+# Results
+Deep Convolutional Network Network (CNN) Classification results for four classes is seen below.
 
 <p align="center">
   <img  width="2000" src="Assets/Colab/plot_4C_Normal.png" >
