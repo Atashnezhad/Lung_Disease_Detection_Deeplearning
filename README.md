@@ -9,7 +9,8 @@
 Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we apply two convolutional neural networks for image classification. 
 Two data sets were gathered from Kaggle and Github for training Convolutional Nural Networks (CNN).
 First, a two-class classification model was trained on balanced data (covid vs normal) to differentiate the healthy cases from covid cases.
-Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. Two common approaches in image processing to deal with imbalanced data are class weight adjustment and over-sampling. The oversampling was done along with data augmentation (Applying different transformers for this purpose, flip, rotation, zoom). The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from Colab GPU. 
+Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. 
+Two common approaches in image processing to deal with imbalanced data are class weight adjustment and over-sampling. The oversampling was done along with data augmentation (Applying different transformers for this purpose, flip, rotation, zoom) for four class classification project. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from Colab GPU. 
 
 
 
@@ -17,7 +18,8 @@ Second, a neural network was trained to separate four classes including pneumocy
 
 **Gathering data:** 
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
-The data then was divided into two Train and Validation folders.
+The data [All_data](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/All_data) then was divided into two Train Validation, and Test folders [Dataset_augmented_subfolders](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Dataset_augmented_subfolders) (two class classification project).
+
 Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
 
 
