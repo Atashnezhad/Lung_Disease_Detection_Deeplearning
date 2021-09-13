@@ -15,10 +15,10 @@
 
 # Artificial intelligence for lung disease detection using chest CT scan images
 
-Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we use apply two convolutional neural networks for classification. 
-Two different data sets were gathered from Kaggle and Github for training two separate Convolutional Nural Networks (CNN).
-First, a two-class classification model was trained on balanced data (covid vs normal) to detect and differentiate the healthy cases from covid cases.
-Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. I used two common approaches in image processing for dealing with imbalanced data including class weight adjustment and over-sampling. The oversampling was done using data augmentation which uses different transformers for this purpose. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from GPU and high speed. 
+Artificial intelligence has the potential to help in covid detection using CT scan images from patient's chests. In this project, we apply two convolutional neural networks for image classification. 
+Two data sets were gathered from Kaggle and Github for training Convolutional Nural Networks (CNN).
+First, a two-class classification model was trained on balanced data (covid vs normal) to differentiate the healthy cases from covid cases.
+Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. Two common approaches in image processing to deal with imbalanced data are class weight adjustment and over-sampling. The oversampling was done along with data augmentation (Applying different transformers for this purpose, flip, rotation, zoom). The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from Colab GPU. 
 
 <!--
 ### Description
