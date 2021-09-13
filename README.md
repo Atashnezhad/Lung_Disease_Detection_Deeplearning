@@ -103,10 +103,16 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 **CNN model Metrics and Conclusion**
 
 The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
+
+<!--
 * The CNN model different metrics are seen for biclass classification project below.
+
+
 <p align="left">
   <img width="700" src="Figures/plot_01_1.png" >
 </p>
+
+
 
 * The CNN model different loss and accuracy metrics are seen for biclass classification project below.
 <p align="left">
@@ -114,7 +120,7 @@ The call back function automatically save the best models taking the best val_ac
 </p>
 
 
-
+-->
 
 **Visualization**
 
@@ -123,6 +129,8 @@ The call back function automatically save the best models taking the best val_ac
   <img width="500" src="Figures/CNN_4class.png" >
 </p>
 
+
+<!--
 - The second Convolutional Nural Networks layers were Visualized below.
 
 <p align="center">
@@ -130,7 +138,7 @@ The call back function automatically save the best models taking the best val_ac
 </p>
 
 You can see that some filters check the edge of images while as we get far from images filters see the roundness of the image.
-
+-->
 
 
 **Final**
