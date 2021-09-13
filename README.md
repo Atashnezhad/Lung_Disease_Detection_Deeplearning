@@ -87,8 +87,6 @@ Deep Convolutional Network Network (CNN) Classification results for four classes
 
 
 
-
-
 <!--
 * The **Dataset** two categories are seen below.
 <p align="left">
