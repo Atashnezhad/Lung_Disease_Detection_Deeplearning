@@ -18,14 +18,10 @@ Two common approaches in image processing to deal with imbalanced data are class
 
 **Gathering data:** 
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
-The data [All_data](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/All_data) then was divided into two Train Validation, and Test folders [Dataset_augmented_subfolders](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Dataset_augmented_subfolders) (two class classification project).
 
-Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
+The data ([All_data](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/All_data)) then was divided into two Train Validation, and Test folders ([Dataset_augmented_subfolders](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Dataset_augmented_subfolders)) (two class classification project).
 
-
-In this project, we use the deep neural network to differ the normal patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
-As it is seen in the project directory, the multi-class classification data set (Dataset_4_classe) included four different sub-folders compare to two bi-class classification data set (Data set).
-
+In four class classificaton project, the data ([All_data_4_classes](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/All_data_4_classes)) was augmented ([Dataset_augmented_4_classes](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Dataset_augmented_4_classes)) and then was devided into four subfolders including Normal, Covid, Pneumocystis, Streptococcus ([Data_augmented_4_classes_train_test_val](https://github.com/Atashnezhad/Lung_Disease_Detection_Deeplearning/tree/Second/Data_augmented_4_classes_train_test_val)).
 
 **Assembled Deep Net Model Layers:** 
 Any time that you have several images (multiclass classification) use two to three convolution layers. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images.
