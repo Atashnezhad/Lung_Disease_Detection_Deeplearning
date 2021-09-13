@@ -164,6 +164,9 @@ You can see that some filters check the edge of images while as we get far from 
 
 <p align="center">
   <img  width="2000" src="Assets/Colab/plot_4C_Normal.png" >
+    <img  width="2000" src="Assets/Colab/plot_4C_COVID.png" >
+    <img  width="2000" src="Assets/Colab/plot_4C_Pneumocystis.png" >
+    <img  width="2000" src="Assets/Colab/plot_4C_Streptococcus.png" >
 </p>
 
 
