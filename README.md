@@ -14,7 +14,7 @@ Two common approaches in image processing to deal with imbalanced data are class
 
 
 
-### Instruction
+# Instruction
 
 **Gathering data:** 
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
@@ -43,7 +43,7 @@ class_weights = {class_id : max_val/num_images for class_id, num_images in count
 The call back function automatically save the best models taking the best val_acc into account. User can call different saved models and use for analysis.
 
 
-**Discussion**
+# Discussion
 
 * Both models including two class classification and four class classification were developed in python using tensorflow library.
 * For the two class classification the balance data set was used.
@@ -56,7 +56,7 @@ The call back function automatically save the best models taking the best val_ac
 * The four-class classification model accuracy achieved around 80%.
 
 
-**Suggestion**
+# Suggestion
 
 * Balancing data using a generator is one option for dealing with imbalanced data but it is not always the best.
 * The weighted objective function can be used as a second option.
@@ -65,7 +65,7 @@ The call back function automatically save the best models taking the best val_ac
 * Different learning rate should be applied to see it will affect the output.
 
 
-**Final CNN 4 Class Classification Results**
+# Final CNN 4 Class Classification Results
 
 <p align="center">
   <img  width="2000" src="Assets/Colab/plot_4C_Normal.png" >
