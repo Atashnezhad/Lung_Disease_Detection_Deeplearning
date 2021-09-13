@@ -16,7 +16,7 @@ Two different data sets were gathered from Kaggle and Github for training two se
 First, a two-class classification model was trained on balanced data (covid vs normal) to detect and differentiate the healthy cases from covid cases.
 Second, a neural network was trained to separate four classes including pneumocystis, covid, streptococcus, and normal. I used two common approaches in image processing for dealing with imbalanced data including class weight adjustment and over-sampling. The oversampling was done using data augmentation which uses different transformers for this purpose. The models were run on the local machine with a few epochs and later uploaded into the google-colab to benefit from GPU and high speed. 
 
-
+<!--
 ### Description
 The three lungs discuss definition is as follows.
 
@@ -35,6 +35,12 @@ The three lungs discuss definition is as follows.
 * Streptococcus is a genus of gram-positive coccus or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales, in the phylum Firmicutes. Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted.
 
 **reference: Wikipedia, Google**
+
+-->
+
+
+
+
 
 ### Table of Contents
 The project directory tree structure is provided below.
@@ -61,6 +67,9 @@ The project directory tree structure is provided below.
 The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and [Github](https://github.com/ieee8023/covid-chestxray-datasetrepository).
 The data then was divided into two Train and Validation folders.
 Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
+
+
+<!--
 * The **Dataset** two categories are seen below.
 <p align="left">
   <img src="Assets/plot_01_assets_1.png" >
@@ -70,6 +79,9 @@ Two data sets were prepared which are **Dataset** and **Dataset_4_classe**.
 <p align="left">
   <img src="Assets/plot_01_assets_1_4classes.png" >
 </p>
+
+-->
+
 
 In this project, we use the deep neural network to differ the normal patients from three different sicknesses including Pneumocystis, COVID-19, and Streptococcus.
 As it is seen in the project directory, the multi-class classification data set (Dataset_4_classe) included four different sub-folders compare to two bi-class classification data set (Data set).
@@ -122,12 +134,19 @@ The call back function automatically save the best models taking the best val_ac
 
 -->
 
+
+<!--
 **Visualization**
 
 - A visualization using visualkeras library for 4 class classification network is seen below.
 <p align="center">
   <img width="500" src="Figures/CNN_4class.png" >
 </p>
+
+
+-->
+
+
 
 
 <!--
