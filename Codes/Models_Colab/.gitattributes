@@ -1,1 +1,2 @@
 model_epoch_14_loss_0.46_acc_0.54_val_acc_0.64_.h5 filter=lfs diff=lfs merge=lfs -text
+P0205_model_epoch_52_loss_0.06_acc_0.98_val_acc_0.91_.h5 filter=lfs diff=lfs merge=lfs -text
