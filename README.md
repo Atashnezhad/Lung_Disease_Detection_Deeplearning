@@ -21,7 +21,7 @@ The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothym
 
 **Assembled Deep Net Model Layers:** 
 In multiclass classification using DNN, two to three convolution layers are suggested. Also, the softmax activation function for the last layer is recommended. Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that use convolution layers for image processing. The reason is if we use dense layers we will lose positional information in images. In four class classification projects, I found that the relu activation function results in higher accuracy. I used Adam optimizer with a learning rate of 0.001.
-It is a common practice of practitioners , to begin with, small networks with a small number of layers and then changing the architecture step by step taking the Bias and variance into account. I had high bias in network which I solved by incresing the size and by changing activation function type.  
+It is a common practice of practitioners , to begin with, small networks with a small number of layers and then changing the architecture step by step taking the Bias and variance into account. I had high bias in network which I solved by incresing the network size and by changing activation function type.  
 
 <!--
 The CNN Model architecture used for four-class classification is seen below.
