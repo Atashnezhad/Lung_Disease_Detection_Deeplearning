@@ -22,7 +22,7 @@ The X-Ray images were gathered from [Kaggle](https://www.kaggle.com/paultimothym
 **Assembled Deep Net Model Layers:** 
 Any time in multiclass classification two to three convolution layers are suggested. Also, a use softmax as activation for the last layer as I did (my recommendation but you may test other types). Note that the categorical_crossentropy is almost default for multiclass classifiers. Remember that we always use convolution layers for images. the reason is if we use dense layers we will lose positional information in images. In four class classification projects, I found that the relu activation function results in higher accuracy. I used Adam optimizer with a learning rate of 0.001.
 
-
+<!--
 The CNN Model architecture used for four-class classification is seen below.
 ```
 
@@ -62,6 +62,7 @@ Total params: 12,001,220
 Trainable params: 12,000,900
 Non-trainable params: 320
 ```
+-->
 
 
 
@@ -69,8 +70,7 @@ Non-trainable params: 320
 
 
 
-
-**Prepare Images:**
+**Preparing Images:**
 Using ImageDataGenerator does the normalization. 
 Note that in the validation and test section, I just applied the normalization. 
 In two-class classification, the number of images is equal so there is no need for balancing the dataset. However, for the four-class classification, I have imbalanced data and I need to consider it to prevent bias. 
