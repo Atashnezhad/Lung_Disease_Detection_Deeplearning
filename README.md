@@ -3,7 +3,6 @@
   <img width="1700" src="Assets/Head.png" >
 </p>
 -->
-
 <p align="center">
   <img width="220" src="Assets/Grad_cam/Grad_cam_Normal.jpg" >
   <img width="200" src="Assets/Grad_cam/Grad_cam_Covid.jpg" >
