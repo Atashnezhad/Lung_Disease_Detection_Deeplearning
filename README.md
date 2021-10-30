@@ -4,10 +4,10 @@
 </p>
 -->
 <p align="center">
-  <img width="220" src="Assets/Grad_cam/Grad_cam_Normal.jpg" >
-  <img width="200" src="Assets/Grad_cam/Grad_cam_Covid.jpg" >
-  <img width="182" src="Assets/Grad_cam/Grad_cam_Pneumocystis.jpg" >
-  <img width="212" src="Assets/Grad_cam/Grad_cam_Streptococcus.jpg" >
+  <img width="210" src="Assets/Grad_cam/Grad_cam_Normal.jpg" >
+  <img width="190" src="Assets/Grad_cam/Grad_cam_Covid.jpg" >
+  <img width="172" src="Assets/Grad_cam/Grad_cam_Pneumocystis.jpg" >
+  <img width="202" src="Assets/Grad_cam/Grad_cam_Streptococcus.jpg" >
 </p>
 
 
